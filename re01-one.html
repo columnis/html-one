@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浅余小站</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            background-color:#eee;
+        }
+        /*
+        *{
+            border:1px solid black;
+        }
+        */
+        .yinyin{
+            box-shadow:10px 10px 5px rgb(225, 219, 223) ;
+        }
+        .flex{
+            display:flex;
+        }
+        .baise{
+            background-color:white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .ma8{
+            margin: 8px;
+        }
+        .mar8{
+            margin-right:8px;
+        }
+        .mat8{
+            margin: 8px;
+        }
+        .daohang{
+            padding: 20px;
+            border-bottom: solid 1px rgb(194, 191, 191);
+        }
+        .lanse{
+            background-color: rgb(224, 237, 241);
+        }
+        .toubu{
+            flex-direction: column;
+        }
+        .yanse{
+            color:rgb(210, 168, 32)
+        }
+        /*当屏幕为手机的时*/
+        @media(max-width:600px)
+        {
+            .cebian{
+                display: none;
+            }
+            .neirong{
+                 flex-direction:column;
+            }
+            .shujuqu{
+                flex-direction: column;
+            }
+            .youqu{
+                margin-left: 8px;
+            }
+            .shuju{
+                margin:0 0 8px;
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+<body class="flex"> 
+   <!--侧边栏-->
+   <div style="width: 200px; z-index: 2;" class="baise ma8 yinyin cebian">
+       <!--头像栏-->
+       <div style="padding:20px;align-items:center;justify-content:center;border-bottom:1px solid gray;background-image:url('https://pic3.zhimg.com/v2-c5544169237bf327f29f4ba91ce0ac46_r.jpg?source=1940ef5c');"class="flex";>
+         <img src="https://ts1.cn.mm.bing.net/th/id/R-C.a7e62ba5fc317e589371792cc675655e?rik=arfIX11%2bLzLzhA&riu=http%3a%2f%2fimg.ewebweb.com%2fuploads%2f20200303%2f18%2f1583232931-NsQyqXmLKB.jpg&ehk=WElry2bNVzUNCgYPDtTxbF5ez9AfPDAoZaEC8%2fwdCio%3d&risl=&pid=ImgRaw&r=0"
+         width="40px"
+         height="40px"
+         >
+         <div style="margin-left:10px;">杨舒翔</div>
+        </div>
+       <!--导航栏-->
+       <div class="flex1"; style="color:rgb(32, 157, 192); background-color: rgb(231, 221, 194);margin-left: 50px; margin-right: 75px; padding: 20px; border-bottom:solid 1px gray">爱好</div>
+       <div class="flex1 lanse">
+        <div class="daohang lanse" >
+            <a href="https://www.baidu.com/" style="color:rgb(56, 54, 54)">搜索</a>
+        </div>
+        <div class="daohang lanse">
+           <a href="https://www.huya.com/" style="color:rgb(56, 54, 54)">娱乐</a>
+        </div>
+        <div class="daohang lanse">
+            <a href="https://www.bilibili.com/" style="color:rgb(56, 54, 54)">学习</a>
+        </div>
+        <div class="daohang lanse">
+            <a href="https://gp.qq.com/main.shtml" style="color:rgb(56, 54, 54)">游戏</a>
+        </div>
+        </div>
+    </div>
+   <!--主区域-->
+   <div class="flex flex1 column">
+      <!--头部栏-->
+      <div style="height: 300px;" class="baise flex">
+            <!--左图-->
+            <div style="flex:3; background-image:url(https://ts1.cn.mm.bing.net/th/id/R-C.1bedd66e8c58e49a40597d2cfe315ee4?rik=rf7X%2bhyoPGNBcQ&riu=http%3a%2f%2fimg.ppt.cn%2f20200901%2f59791bb4f31575b8152ae85fcf2bc5c2.jpg&ehk=xRhQd7TYoFOBM1HHUEjAsFm8sANd12vq1qPkrTiZND4%3d&risl=&pid=ImgRaw&r=0);background-size: 1000px;" class="baise yinyin mar8 flex column">
+              <div class="flex1" style="color:rgb(190, 26, 163);text-shadow: 5px 5px 5px rgb(38, 100, 132);text-align:center;margin-top: 20px;font-size: 30px;font-family: 'Comic Sans MS', cursive, sans-serif;"><b>个人简介</b></div>
+              <!--1-->
+              <div class="flex1 flex">
+                <div class="flex1" style="margin-left: 40px;"><b>姓名：</b>杨舒翔</div>
+                <div class="flex1" style="margin-left: 40px;"><b>年龄：</b>不详</div>
+                <div class="flex1" style="margin-left 40px;"><b>微信:</b>ysx3498455859</div>
+              </div>
+              <!--2-->
+              <div class="flex1 flex">
+                <div class="flex1" style="margin-left: 40px;"><b>爱好：</b>游戏，乒乓球</div>
+                <div class="flex1" style="margin-left: 40px;"><b>就读学校：</b>略</div>
+                <div class="flex1" style="margin-left: 40px;"><b>特长：</b>暂时不清楚</div>
+              </div>
+              <!--3-->
+              <div class="flex1">
+
+              </div>
+            </div>
+             <!--右图--> 
+            <div style="flex:1; background-image:url(https://ts1.cn.mm.bing.net/th/id/R-C.77e973ae84e37db5f3f6021198b40bde?rik=CYNq6hgqji12gQ&riu=http%3a%2f%2fwww.qubiaoqing.cn%2fpic%2f2020%2f07%2f27%2f4t1uqkpa34g.jpg&ehk=loiSW%2fvNUQ7JqOs9OIdgNLyGOnhdUfwCtxIJUO7ZHdY%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1);background-size: 270px 300px;" class="yinyin baise">
+            </div>
+    </div>
+      <!--内容栏-->
+      <div style="overflow:auto" class="flex1 flex yinyin neirong">
+        <!--左区-->
+        <div style="flex: 3" class="flex column ma8">
+            <!--列表区-->
+            <div class="flex column">
+                <!--列表项-->
+                <div style="height: 160px;background-image:url(https://ts1.cn.mm.bing.net/th/id/R-C.0c8bf36e099654aadaf5f127ef1a3f1b?rik=uHrB%2blGez03%2fAA&riu=http%3a%2f%2fi3.img.969g.com%2fdown%2fimgx2014%2f10%2f24%2f289_102445_a1cff.jpg&ehk=EeF%2fioqRM6NfQqkCgXw%2bwLvO1%2fxZgeZ2pof7ALNLGsg%3d&risl=&pid=ImgRaw&r=0);background-size: 1000px 160px;" class="baise mat8 yinyin flex column">
+                  <div class="flex1" style="margin-left: 30px; font-size: 40px;"><b>人生信条:</b></div>
+                  <div style="flex:3;margin-left: 300px;font-size: large;">即便顶峰留不住，那就重走来时路.</div>  
+                </div>
+                <div style="background-size:1300px 320px;height:640px;background-image: url(https://www.toopic.cn/public/uploads/small/1634202081493163420208139.jpg);" class="baise mat8 yinyin">
+                 <p><b>爬虫源代码：</b></p> 
+                 <p>import requests</p>
+                 <p> #lxml 工具箱 requests 车（都是安装的）</p>
+                 <p> #网页空白处右键-检查-右上角箭头-点网页上的东西就可以看到它对应的代码</p>
+                 <p>  from lxml import etree</p>
+                  <p>  from urllib import request</p>
+                 <p class="yanse"> 地址='https://www.huya.com/g/4079'</p>
+                 <p class="yanse">  老王家=requests.get(地址)</p>
+                <p> 保险柜=老王家.text</p>
+                <p> 打开后的保险柜=etree.HTML(保险柜)</p>
+                <p>   #字画 古董 金条</p>
+                <p>   #代码块=data-original图片 alt名称</p>
+                <p>   所有图片代码块=打开后的保险柜.xpath('//img[@class="pic"]')</p>
+                <p>   for a in 所有图片代码块:</p>
+                <p class="yanse">        图片 = a.xpath('./@data-original')[0]</p>
+                <p class="yanse">       名称 = a.xpath('./@alt')[0]</p>
+                <p class="yanse">       request.urlretrieve(图片, r'D:\爬虫'+名称+'.jpg') </p>
+                </div>
+            </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mar8 mat8 youqu">
+            <!--提示区-->
+            <div style="height: 150px" class="baise yinyin">
+            </div>
+            <!--消息区-->
+            <div style="height: 300px" class="baise mat8 yinyin">
+            </div>
+        </div>
+      </div>
+   </div>
+</body>
+</html>
